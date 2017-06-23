@@ -1,11 +1,14 @@
-$hdfs dfs -ls /user
-
-Found 5 items
-drwxrwxrwx   - mapred hadoop          0 2017-06-23 04:13 /user/history
-drwxrwxr-t   - hive   hive            0 2017-06-23 04:14 /user/hive
-drwxrwxr-x   - hue    hue             0 2017-06-23 04:14 /user/hue
-drwxrwxr-x   - oozie  oozie           0 2017-06-23 04:14 /user/oozie
-drwxr-x--x   - spark  spark           0 2017-06-23 04:13 /user/spark
+$ hdfs dfs -ls /user
+Found 9 items
+drwxr-xr-x   - admin  admin               0 2017-06-23 04:23 /user/admin
+drwxr-xr-x   - saturn supergroup          0 2017-06-23 04:35 /user/haley
+drwxr-xr-x   - hdfs   supergroup          0 2017-06-23 04:23 /user/hdfs
+drwxrwxrwx   - mapred hadoop              0 2017-06-23 04:13 /user/history
+drwxrwxr-t   - hive   hive                0 2017-06-23 04:14 /user/hive
+drwxrwxr-x   - hue    hue                 0 2017-06-23 04:14 /user/hue
+drwxrwxr-x   - oozie  oozie               0 2017-06-23 04:14 /user/oozie
+drwxr-xr-x   - saturn supergroup          0 2017-06-23 04:32 /user/saturn
+drwxr-x--x   - spark  spark               0 2017-06-23 04:13 /user/spark
 
 $curl  -X GET -u admin:admin \http://localhost:7180/api/v14/hosts
 
